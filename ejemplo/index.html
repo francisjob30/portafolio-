@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Francis</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="yorkjpg.png" alt="">
+            </div>
+            <h1>FRANCIS CRUZ</h1>
+            <h2>Estudiante de Alura Latam</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola, soy Francis Cruz</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio qui ducimus assumenda quasi, tempora,nisi saepe praesentium magni quas quo nemo error neque perspiciatis repellat odit consectetur. Tempore, natus nostrum.</p>
+
+             <div class="fila">
+                <!-- DATOS PERSONALES -->
+                <div class="col">
+             <h3>Datos Personales</h3>
+             <ul>
+                <li>
+                    <strong>Cumpleaños</strong>
+                    30-05-1999
+                </li>
+                <li>
+                    <strong>Telefono</strong>
+                    555-444-333
+                </li>
+                <li>
+                    <strong>Email</strong>
+                    fc@example.com
+                </li>
+                <li>
+                    <strong>Website</strong>
+                    www.example.com
+                </li>
+                <li>
+                    <strong>Direccion</strong>
+                    150 ponny ST, NY
+                </li>
+                <li>
+                    <strong>Cargo</strong>
+                    <span>Estudiante</span>
+                </li>
+             </ul>
+                </div>
+
+                <!-- INTERESES -->
+                <div class="col">
+                    <h3>Inereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="intereses">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-paintbrush"></i>
+                            <span>PINTURAS</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-hippo"></i>
+                            <span>ANIMALES</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-building-columns"></i>
+                            <span>MUSEOS</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-tv"></i>
+                            <span>ANIME</span>
+                        </div>
+                        <button>
+                            Descargar CV  <i class="fa-solid fa-download"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skills -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JIRA, ANDI, QTEST</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>NVDIA & EVINCED</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>20%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Paciencia</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educacion</h3>
+                    <div class="item izq">
+                        <h4>Diseño Grafico</h4>
+                        <span class="casa">Universidad Autonoma</span>
+                        <span class="fecha">2018-Presente</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum similique vitae possimus eaque nobis aliquid distinctio, praesentium id asperiores ratione maxime. Dolorem iste ad, ea nam ducimus incidunt illum tempora.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Diseño Grafico</h4>
+                        <span class="casa">Universidad Autonoma</span>
+                        <span class="fecha">2018-Presente</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum similique vitae possimus eaque nobis aliquid distinctio, praesentium id asperiores ratione maxime. Dolorem iste ad, ea nam ducimus incidunt illum tempora.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Diseño Grafico</h4>
+                        <span class="casa">Universidad Autonoma</span>
+                        <span class="fecha">2018-Presente</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum similique vitae possimus eaque nobis aliquid distinctio, praesentium id asperiores ratione maxime. Dolorem iste ad, ea nam ducimus incidunt illum tempora.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>UAT Tester</h4>
+                        <span class="casa">Nombre de Compañia</span>
+                        <span class="fecha">2020-2021</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum similique vitae possimus eaque nobis aliquid distinctio, praesentium id asperiores ratione maxime. Dolorem iste ad, ea nam ducimus incidunt illum tempora.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>UAT Tester</h4>
+                        <span class="casa">Nombre de Compañia</span>
+                        <span class="fecha">2020-2021</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum similique vitae possimus eaque nobis aliquid distinctio, praesentium id asperiores ratione maxime. Dolorem iste ad, ea nam ducimus incidunt illum tempora.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>UAT Tester</h4>
+                        <span class="casa">Nombre de Compañia</span>
+                        <span class="fecha">2020-2021</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum similique vitae possimus eaque nobis aliquid distinctio, praesentium id asperiores ratione maxime. Dolorem iste ad, ea nam ducimus incidunt illum tempora.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Pagina Web</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño de personaje</h3>
+                        <p>Video Juego</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Pagina Web</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Pagina Web</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="p5.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Pagina Web</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Pagina Web</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tu Nombre">
+                    <input type="text" placeholder="Numero telefonico">
+                    <input type="text" placeholder="Direccion de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id=""cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Republica Dominicana 23, San Rafael Santo Domingo
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                Llamanos: 555-444-222
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                               Email: fcd@example.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+
+    <script src="popo.js"></script>
+</body>
+</html>
